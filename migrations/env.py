@@ -5,8 +5,8 @@ from sqlalchemy import pool
 from sqlalchemy.engine import Connection
 from sqlalchemy.ext.asyncio import async_engine_from_config
 from alembic import context
-from src.auth.models import User
-from src.books.modules import Book
+from src.db.models import User
+from src.db.models import Book
 from sqlmodel import SQLModel
 from src.config import Config
 database_url=Config.DATABASE_URL
